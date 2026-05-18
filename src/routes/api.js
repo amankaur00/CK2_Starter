@@ -1,10 +1,14 @@
-const express = require("express");
+router.post("/auth/login", (req, res) => {
+  const { username, password } = req.body;
 
-const router = express.Router();
+  if (!username || !password) {
+    return res.status(400).json({
+      message: "Username and password required",
+    });
+  }
 
-router.get("/health", (req, res) => {
-  res.json({ status: "OK" });
+  return res.json({
+    message: "Login successful",
+  });
 });
-
-module.exports = router;
 
