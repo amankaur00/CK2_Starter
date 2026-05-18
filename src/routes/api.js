@@ -8,3 +8,18 @@ router.get("/health", (req, res) => {
 
 module.exports = router;
 
+router.post("/message", (req, res) => {
+  const { message } = req.body;
+
+
+  if (!message) {
+    return res.status(400).json({
+      error: "Message is required",
+    });
+  }
+
+  return res.json({
+    received: message,
+  });
+});
+
