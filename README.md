@@ -51,3 +51,6 @@ To intentionally create a merge conflict, edit the same lines in one of:
 npm test
 npm run lint
 ```
+## API Features
+
+Additional API endpoints were added for validation and messaging.
