@@ -51,3 +51,7 @@ To intentionally create a merge conflict, edit the same lines in one of:
 npm test
 npm run lint
 ```
+## Database Feature
+
+This project now includes a simulated database connection and status endpoint.
+
