@@ -20,3 +20,17 @@ so all reviews on this checkpoint are comment-based. Explain:
 
 ## 4) Merge Strategy
 Confirm you used **Squash and merge** and explain one benefit (clean history, easier rollback, etc.).
+
+# Collaboration Workflow Report
+
+## Branch Strategy
+Feature branches were created for user authentication, database connection, and API endpoints.
+
+## Pull Request Workflow
+Each feature was developed independently and merged through pull requests using squash merges.
+
+## Code Review
+Review comments were added during pull request discussions and follow-up commits were created to improve implementation quality.
+
+## Challenges
+Merge conflicts occurred while merging API endpoint changes and were resolved manually.
