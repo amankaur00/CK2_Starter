@@ -1,14 +1,10 @@
-router.post("/auth/login", (req, res) => {
-  const { username, password } = req.body;
+const db = require("../db");
 
-  if (!username || !password) {
-    return res.status(400).json({
-      message: "Username and password required",
-    });
-  }
+router.get("/db-status", (req, res) => {
+  const status = db.getStatus();
 
-  return res.json({
-    message: "Login successful",
+  res.json({
+    connected: status,
   });
 });
 
